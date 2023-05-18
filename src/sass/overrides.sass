@@ -1,0 +1,144 @@
+@import vuetify-material/sidebar
+@import vuetify-material/appbar
+@import vuetify-material/buttons
+@import vuetify-material/pagination
+@import vuetify-material/footer
+@import vuetify-material/content
+@import vuetify-material/settings
+@import vuetify-material/card
+@import vuetify-material/table
+@import vuetify-material/tab
+@import vuetify-material/notification
+@import vuetify-material/modal
+@import vuetify-material/chip
+
+.v-application p
+  margin-bottom: 16px
+  line-height: 2rem
+
+.v-btn.v-size--default,
+.v-btn.v-size--large
+  &:not(.v-btn--icon):not(.v-btn--fab)
+    padding: 0 30px !important
+
+.theme--light.v-list-item .v-list-item__action-text,
+.theme--light.v-list-item .v-list-item__subtitle
+  color: #999
+
+.theme--light.v-text-field > .v-input__control > .v-input__slot:before
+  border-color: #d2d2d2
+
+.v-label.v-label,
+.v-alert.v-alert
+  font-size: $font-size-root
+
+.theme--light .v-main
+  background-color: #eee
+
+.field-relative
+  position: relative
+
+.field-relative.no-padding
+    padding: 0
+
+.invalid-feedback
+  display: inline-block
+  width: 100%
+  margin-top: 0.25rem
+  font-size: 80%
+  color: #e3342f
+  position: absolute
+  bottom: 0px
+  left: 5px
+
+video
+    width: 100% !important
+    height: auto !important
+    margin: 0 auto
+    display: block
+    max-height: 500px
+    position: relative !important
+
+.video-js
+  width: 100% !important
+  max-height: 483px
+  height: auto
+
+.video-js .vjs-big-play-button
+  top: 45% !important
+  left: 45% !important
+
+.thumb-wrap
+  position: relative
+  padding-bottom: 56.25% /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0
+  overflow: hidden
+
+.thumb-wrap iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  border-width: 0
+  outline-width: 0
+
+.thumb-wrap-how
+  position: relative
+  padding-bottom: 100% /* задаёт высоту контейнера для квадратного */
+  height: 0
+  overflow: hidden
+
+.thumb-wrap-how iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  border-width: 0
+  outline-width: 0
+
+.privacy-text
+  font-size: 10px !important
+  color: #999999 !important
+  line-height: 15px !important
+
+.privacy-text a
+  color: #999999 !important
+
+.cookie-notification
+  position: fixed
+  bottom: 5px
+  left: 50%
+  width: 900px
+  max-width: 95vw
+  transform: translateX(-50%)
+  padding: 15px
+  background-color: rgba(55, 55, 55, 0.8)
+  border-radius: 10px
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4)
+  font-size: 12px
+  color: #fff !important
+  z-index: 999
+
+.cookie-notification p
+  width: 85%
+  display: inline-block
+  line-height: 16px
+  padding: 0
+  margin: 0
+
+.cookie-notification a
+  color: #fff !important
+
+.cookie-accept
+  float: right
+  margin: 0 !important
+
+@media(max-width: 960px)
+  .cookie-notification p
+    width: 75%
+
+@media(max-width: 600px)
+  .cookie-notification p
+    width: 60%

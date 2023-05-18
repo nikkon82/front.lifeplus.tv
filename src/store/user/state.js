@@ -1,0 +1,15 @@
+export default {
+    isLoggedIn: false,
+    profile: {},
+    users:[],
+    user: [],
+    userPackage: [],
+    userAccess: [],
+    profileAccess: [],
+    partnerAccess: [],
+    prospects: [],
+    prospectsBasket: [],
+    prospect: [],
+    newProspects: [],
+    countProspects: 0,
+}
